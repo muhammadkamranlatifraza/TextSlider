@@ -43,8 +43,8 @@ Step 2. Add the dependency
         });
 
         easySlider.setDotsBackground(R.drawable.rounded);
-//        easySlider.showDots();
-//        easySlider.hideDots();
+	//        easySlider.showDots();
+	//        easySlider.hideDots();
         
         SliderItem item = new SliderItem("this will have custom bg in title", 30);
         item.setTitleBgResID(R.drawable.rounded);
@@ -55,11 +55,11 @@ Step 2. Add the dependency
         item.setTextSize(40);
 
         List<SliderItem> sliderItems = new ArrayList<>();
-//        sliderItems.add(new SliderItem("Text/Banner Slider, fully customizable", 40, false));
-//        sliderItems.add(new SliderItem("Text/Imsge, Text only or image only, text size editable", 30, false));
-//        sliderItems.add(new SliderItem("<p>This is<sub> HTML Formatted</sub> and <sup>TEXT</sup> used in title</p>", 15, true));
-//        sliderItems.add(new SliderItem("Image from url or resources folder", 20, R.drawable.ic_launcher_foreground));
-//        sliderItems.add(new SliderItem("AndroidX library ready to use", 40));
+	//        sliderItems.add(new SliderItem("Text/Banner Slider, fully customizable", 40, false));
+	//        sliderItems.add(new SliderItem("Text/Imsge, Text only or image only, text size editable", 30, false));
+	//        sliderItems.add(new SliderItem("<p>This is<sub> HTML Formatted</sub> and <sup>TEXT</sup></p>", 15, true));
+	//        sliderItems.add(new SliderItem("Image from url or resources folder", 20, R.drawable.ic_launcher_foreground));
+	//        sliderItems.add(new SliderItem("AndroidX library ready to use", 40));
         sliderItems.add(item);
         easySlider.setPages(sliderItems);
 
