@@ -63,3 +63,5 @@ Step 2. Add the dependency
         sliderItems.add(item);
         easySlider.setPages(sliderItems);
 
+Original Author and lib
+https://github.com/ahmedshaban1/EasySlider
