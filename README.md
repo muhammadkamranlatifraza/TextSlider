@@ -20,7 +20,9 @@ Step 2. Add the dependency
   Featues:
   
   use simple/HTML formatted Text or image or both in slider.
+  
   can give custom size of title
+  
   can set custom bg for dots and/or titles
   
   
