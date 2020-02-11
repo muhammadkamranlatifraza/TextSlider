@@ -34,8 +34,7 @@ Step 2. Add the dependency
         android:layout_height="300dp"
         android:id="@+id/slider"/>
         
-        // JAVA
-          easySlider = findViewById(R.id.slider);
+                easySlider = findViewById(R.id.slider);
         easySlider.setOnItemClickListener(new EasySliderListener() {
             @Override
             public void onItemClick(int position) {
@@ -43,12 +42,24 @@ Step 2. Add the dependency
             }
         });
 
-        SliderItem item = new SliderItem("", 0);
+        easySlider.setDotsBackground(R.drawable.rounded);
+//        easySlider.showDots();
+//        easySlider.hideDots();
+        
+        SliderItem item = new SliderItem("this will have custom bg in title", 30);
+        item.setTitleBgResID(R.drawable.rounded);
+        item.setTitle("Title");
+        item.setTitleColor("#636161");
+        item.setUrl("ImageURL");
+        item.setResID(R.drawable.ic_launcher_foreground);
+        item.setTextSize(40);
+
         List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem("Text/Banner Slider, fully customizable", 40, false));
-        sliderItems.add(new SliderItem("Text/Imsge, Text only or image only, text size editable", 30, false));
-        sliderItems.add(new SliderItem("<p>This is<sub> HTML Formatted</sub> and <sup>TEXT</sup> used in title</p>", 15, true));
-        sliderItems.add(new SliderItem("Image from url or resources folder", 20, R.drawable.ic_launcher_foreground));
-        sliderItems.add(new SliderItem("AndroidX library ready to use", 40));
-        sliderItems.add(new SliderItem("Customizable Click on each banner", -1));
+//        sliderItems.add(new SliderItem("Text/Banner Slider, fully customizable", 40, false));
+//        sliderItems.add(new SliderItem("Text/Imsge, Text only or image only, text size editable", 30, false));
+//        sliderItems.add(new SliderItem("<p>This is<sub> HTML Formatted</sub> and <sup>TEXT</sup> used in title</p>", 15, true));
+//        sliderItems.add(new SliderItem("Image from url or resources folder", 20, R.drawable.ic_launcher_foreground));
+//        sliderItems.add(new SliderItem("AndroidX library ready to use", 40));
+        sliderItems.add(item);
         easySlider.setPages(sliderItems);
+
