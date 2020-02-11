@@ -46,10 +46,10 @@ Step 2. Add the dependency
 	//        easySlider.showDots();
 	//        easySlider.hideDots();
         
-        SliderItem item = new SliderItem("this will have custom bg in title", 30);
-        item.setTitleBgResID(R.drawable.rounded);
+        SliderItem item = new SliderItem("Each Slider title can have custom bg in title", 30);
+        item.setTitleBgResID(R.drawable.title_bg);
         item.setTitle("Title");
-        item.setTitleColor("#636161");
+        item.setTitleColor(android.R.color.black);
         item.setUrl("ImageURL");
         item.setResID(R.drawable.ic_launcher_foreground);
         item.setTextSize(40);
